@@ -5,23 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webpage</title>
     <style>
+         .container
+{
+        background-color:white;
+         border:5px solid rgb(255, 255, 255);
+        border-radius:0px 0px 0px 0px;
+         margin-left:50;
+         margin-right:50;
+         padding:10px 5px 10px 5px;
+         text-align: center;
+         height:400px;
+         width:1500px;
+         display:flex;
+         flex-direction: row;
+         
+}
         .box
-        { background-color: aqua;
-         border:5px solid rgb(9, 131, 238);
+        { background-color:aliceblue;
+         border:5px solid rgb(11, 180, 232);
           width:200px;
          height:450px;
          border-radius:10px 10px 10px 10px;
-         margin-left:100px;
-         margin-right:100px;
-         margin-bottom:50px;
-         margin-top: 50px;
-         padding-left:100px;
-         padding-right:100px;
-         padding-top:50px;
-         padding-bottom:50px;
+         margin:10px 10px 10px 10px;
+         padding: 30px 30px 30px 30px;
          font-size:14;
-         color:red;
-
+         color:rgb(22, 6, 250);
+         display:inline-block;
+         
+         position: relative;
         }
         h1
         {
@@ -36,12 +47,63 @@
          padding-right:100px;
          padding-top:20px;
          padding-bottom:20px;
-
+         text-align: center;
+         position:solid;
 
         }
+      @media screen and (max-width:500px){
+        h1{
+            font-size:20px;
+        }
+        .container{ 
+            display: flex;
+            flex-direction:column; 
+        }
+        .box
+        {
+            width:300px;
+        }
+        
+    }  
+    @media screen and (min-width:500px) and (max-width:900px){
+        h1{
+            font-size:45px;
+            margin-bottom: 50px;
+        }
+        .container{  
+            margin-top:50px;
+            display: flex;
+            flex-direction:column; 
+            
+        }
+        .box
+        {
+            width:400px;
+        }
+        
+    }  
+    @media screen and (max-width:1000px){
+        h1{
+            font-size:50px;
+            margin-bottom: 50px;
+        }
+        .container{  
+            margin-top:50px;
+            display: flex;
+            flex-direction:row; 
+            
+        }
+        .box
+        {
+            width:400px;
+        }
+        
+    }  
+
     </style>
 </head>
 <h1>Beautiful flower bookeys for shop know</h1>
+<div class="container">
 <div class="box">
 <img src="./images/p-lovely-red-roses-128673-m.webp"height="200"width="200"><br><br>
 <h2><b>LOVELY RED ROSES BOOKEY</h2></b>
@@ -56,7 +118,7 @@ Price: 740/- </b><br><br>
     <div class="box">
         <img src="./images/flower.png"height="200"width="200"><br><br>
         <h2><b>BEAUTIFUL FLOWER BOOKEY-PASTRY PALACE</h2></b>
-        !!For birthday parties/functions!!<br><BR>
+        !!For birthday parties/functions!!<br>
         <b>Price: 899/- </b><br><br>
         <button>
             Buy now
@@ -85,16 +147,17 @@ Price: 740/- </b><br><br>
             <div class="box">
             <img src="./images/rose.jpg"height="200"width="200"><br><br>
             <h2><b>DARK RED ROSES FOR BEAUTIFUL HEART</b></h2></b>
-            !!For wedding/parties/functions/valentine!!<br><br>
+            !!For wedding/parties/functions!!<br>
             <b>
             Price: 1500/- </b><br><br>
             <button>
                 Buy now
             </button>
             </div>
-            
+        </div>
     
 
+    
 <body>
     
 </body>
